@@ -1,0 +1,22 @@
+# This is telling the name of github workflow.
+name: "My First Pipelin: printing hello world"
+# Specifing the trigger
+on:
+  push:
+  branch:
+  -main
+# Creating the job
+jobs: 
+
+#Creating the jobs name
+Printing_hellow_world_job:
+
+# Chossing the github runner
+runs-on: ubuntu-latest
+
+# Creating the steps 
+steps:
+  - name: "This Step is going to print hello world"
+    run: echo "Hellow World from Workflow"
+  - name: "This step is going to print date"
+    run: date
